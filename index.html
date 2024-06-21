@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRE-SE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+    <!--PARA O TÍTULO E SUBTÍTULO-->
+    <div class="campo">
+        <h1 id="titulo">CADASTRE SUA LOJA VIRTUAL!</h1>
+        <p id="subt">Complete com informações verídicas</p>
+        <br>
+    </div>
+
+    <!--CRIANDO O FORMULÁRIO-->
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="dono">Nome do proprietário:
+                </label>
+                <input type="text" name="dono" id="dono" required>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="cpf">CPF do proprietário:
+                </label>
+                <input type="text" name="cpf" id="cpf" required>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="endereco">Endereço do proprietário:
+                </label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="email">E-mail do proprietário:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <!--PERGUNTA DO NÍVEL DE EXPERIÊNCIA, MARCA APENAS 1 OPÇÃO-->
+        <div class="campo">
+            <br>
+            <label>Qual o nível de experiência do proprietário sobre as lojas virtuais?
+                <br>
+                <br>
+            </label>
+            <label>
+                <input type="radio" name="opcao" value="critico">Nível crítico
+            </label>
+            <label>
+                <input type="radio" name="opcao" value="intermediario">Nível intermediário
+            </label>
+            <label>
+                <input type="radio" name="opcao" value="Adequado">Nível Adequado
+            </label>
+            <label>
+                <input type="radio" name="opcao" value="excelente">Nível Excelente
+            </label>
+        </div>
+
+        <!--PERGUNTA DO PÚBLICO-ALVO, SELECIONA APENAS 1-->
+        <div class="campo">
+            <br>
+            <label for="nivel">Selecione o público-alvo:</label>
+            <select id="publico">
+                <option selected disabled value="SELECIONE"></option>
+                <option>Crianças</option>
+                <option>Adolescentes</option>
+                <option>Jovens-adultos</option>
+                <option>Adultos</option>
+                <option>Idosos</option>
+                <option>Todos</option>
+            </select>
+        </div>
+        <br>
+
+        <!--PERGUNTA A FINALIDADE, SELECIONA MAIS DE 1-->
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Qual(is) a(s) finalidade(s) da sua loja virtual?</label>
+                
+                <input type="checkbox" id="hobby" name="hobby" value="hobby"> HOBBY
+                
+                <br>
+                <input type="checkbox" id="trab" name="trab" value="trabalho"> TRABALHO
+                
+                <br>
+                <input type="checkbox" id="extra" name="extra" value="trabalhoextra"> TRABALHO EXTRA
+                
+            </div>
+            <!--PARA ADICIONAR OUTRA OPÇÃO EM TEXTO-->
+        <div class="campo">
+            
+            <label for="textarea">Outros:</label>
+            <textarea id="textarea" rows="1"></textarea>
+        </div>
+        </fieldset>
+
+        <!--ADICIONAR NOME DA LOJA VIRTUAL-->
+        <div class="campo">
+            <br>
+            <label for="nome">Adicione o nome de sua loja virtual</label>
+            <textarea id="nome" rows="1" required></textarea>
+        </div>
+        
+        <!--ENVIAR FORMULÁRIO-->
+        <br>
+        <button type="submit" class="botao">CONCLUÍDO</button>
+    </form>
+    <br>
+    
+</main>
+</body>
+</html>
